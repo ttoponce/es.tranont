@@ -12,7 +12,7 @@ Stop words
 Stop words list from http://www.ranks.nl/stopwords
 */
 
-var tipuesearch_stop_words = ["a", "about", "above", "after", "again", "against", "all", "am", "an", "and", "any", "are", "aren't", "as", "at", "be", "because", "been", "before", "being", "below", "between", "both", "but", "by", "can't", "cannot", "could", "couldn't", "did", "didn't", "do", "does", "doesn't", "doing", "don't", "down", "during", "each", "few", "for", "from", "further", "had", "hadn't", "has", "hasn't", "have", "haven't", "having", "he", "he'd", "he'll", "he's", "her", "here", "here's", "hers", "herself", "him", "himself", "his", "how", "how's", "i", "i'd", "i'll", "i'm", "i've", "if", "in", "into", "is", "isn't", "it", "it's", "its", "itself", "let's", "me", "more", "most", "mustn't", "my", "myself", "no", "nor", "not", "of", "off", "on", "once", "only", "or", "other", "ought", "our", "ours", "ourselves", "out", "over", "own", "same", "shan't", "she", "she'd", "she'll", "she's", "should", "shouldn't", "so", "some", "such", "than", "that", "that's", "the", "their", "theirs", "them", "themselves", "then", "there", "there's", "these", "they", "they'd", "they'll", "they're", "they've", "this", "those", "through", "to", "too", "under", "until", "up", "very", "was", "wasn't", "we", "we'd", "we'll", "we're", "we've", "were", "weren't", "what", "what's", "when", "when's", "where", "where's", "which", "while", "who", "who's", "whom", "why", "why's", "with", "won't", "would", "wouldn't", "you", "you'd", "you'll", "you're", "you've", "your", "yours", "yourself", "yourselves"];
+var tipuesearch_stop_words = ["a", "abajo", "acerca", "ahí", "algunos", "alto", "ambos", "antes", "aquí", "arriba", "bajo", "cada", "como", "con", "contra", "cualquiera", "cuando", "cuya", "cuyas", "cuyo", "cuyos", "cuál", "cuáles", "cuándo", "cómo", "de", "debajo", "debe", "debería", "debía", "dentro", "desde", "después", "donde", "durante", "dónde", "e", "el", "ella", "ellos", "en", "encima", "entonces", "entre", "era", "eres", "es", "esa", "esas", "ese", "eso", "esos", "esta", "estado", "estar", "estas", "este", "esto", "estos", "está", "están", "estás", "fue", "fuera", "fueron", "habrá", "habrán", "habrás", "habría", "habríamos", "habrían", "habrías", "hace", "hacer", "haciendo", "han", "hará", "haríamos", "has", "hasta", "hay", "he", "hemos", "hizo", "la", "las", "lo", "los", "mi", "mientras", "misma", "mismo", "mismos", "mucho", "muy", "más", "mí", "nada", "ninguno", "no", "nosotros", "nuestra", "nuestras", "nuestro", "nuestros", "o", "otra", "otro", "para", "pero", "pocos", "podría", "por", "porque", "propio", "puede", "que", "quien", "quienes", "quién", "quiénes", "qué", "se", "ser", "si", "sido", "siendo", "sobre", "solamente", "solo", "somos", "son", "soy", "su", "suya", "suyo", "suyos", "tales", "también", "tener", "teniendo", "tiene", "todo", "todos", "tras", "través", "tu", "tuvo", "tuyo", "tuyos", "tú", "u", "un", "una", "unas", "uno", "unos", "usted", "vamos", "vez", "y", "yo", "él", "ésa", "ésas", "ése", "ésos", "ésta", "éste"];
 
 
 // Word replace
@@ -35,25 +35,21 @@ var tipuesearch_weight = {'weight': [
 
 // Stemming
 
-var tipuesearch_stem = {'words': [
-     {'word': 'e-mail', 'stem': 'email'},
-     {'word': 'javascript', 'stem': 'jquery'},
-     {'word': 'javascript', 'stem': 'js'}
-]};
+var tipuesearch_stem = {'words': [     {'word': 'correo electrónico', 'stem': 'correo electrónico'},     {'word': 'javascript', 'stem': 'jquery'},     {'word': 'javascript', 'stem': 'js'}]};
 
 
 // Internal strings
 
-var tipuesearch_string_1 = 'No title';
-var tipuesearch_string_2 = 'Showing results for';
-var tipuesearch_string_3 = 'Search instead for';
-var tipuesearch_string_4 = '1 result';
-var tipuesearch_string_5 = 'results';
-var tipuesearch_string_6 = 'Prev';
-var tipuesearch_string_7 = 'Next';
-var tipuesearch_string_8 = 'Nothing found';
-var tipuesearch_string_9 = 'Common words are largely ignored';
-var tipuesearch_string_10 = 'Search too short';
-var tipuesearch_string_11 = 'Should be one character or more';
-var tipuesearch_string_12 = 'Should be';
-var tipuesearch_string_13 = 'characters or more';
+var tipuesearch_string_1 = 'Sin título';
+var tipuesearch_string_2 = 'Mostrando resultados de';
+var tipuesearch_string_3 = 'Mejor buscar';
+var tipuesearch_string_4 = '1 resultado';
+var tipuesearch_string_5 = 'resultados';
+var tipuesearch_string_6 = 'Ant';
+var tipuesearch_string_7 = 'Sig';
+var tipuesearch_string_8 = 'No se encontró nada';
+var tipuesearch_string_9 = 'No se hace caso de las palabras comunes';
+var tipuesearch_string_10 = 'El término de búsqueda demasiado corto';
+var tipuesearch_string_11 = 'Debe tener un carácter o más';
+var tipuesearch_string_12 = 'Debe tener';
+var tipuesearch_string_13 = 'caracteres o más';
