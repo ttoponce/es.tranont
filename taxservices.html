@@ -1,0 +1,828 @@
+<!DOCTYPE HTML>
+<html lang="es-419">
+    <head>
+		<title>Servicios de impuestos | Tranont</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Los servicios de impuestos de Tranont le brindan tranquilidad durante la temporada de impuestos con la asistencia de contadores públicos certificados que comprenden las leyes fiscales y le ayudan a obtener la mayor cantidad en su reembolso." name="description">
+    <meta name="robots" content="index,follow">
+	  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_tranont_favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      // Script to Ensure the Homepage Redirects when Needed
+      function breakOut() { if (window != top) top.location.href = location.href; }
+      // Script for Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84500736-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+		<style>
+    /**** BEGIN Navbar Stylings ****/
+    ul li img {
+      width: 30px;
+    }
+    .dropdown {
+      letter-spacing: 2px;
+    }
+    .dropdown .dropdown-menu {
+        -webkit-transition: all;
+        -moz-transition: all;
+        -ms-transition: all;
+        -o-transition: all;
+        transition: all;
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .dropdown.open .dropdown-menu {
+        max-height: 300px;
+        opacity: 1;
+        width: 275px;
+    }
+    .dropdown-header {
+      padding: 5px 10px 2px 10px;
+      font-weight: bold;
+    }
+    .dropdown-menu > li > a {
+      padding: 3px 11px;
+      color: #555555;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    .dropdown-menu .divider {
+      margin: 0;
+    }
+    .form-control {
+      border-radius: 0;
+    }
+    .join-text {
+      margin-left: 8px;
+    }
+    .nav > li > a {
+      padding: 15px 5px;
+    }
+    .navbar {
+      cursor: pointer;
+        margin-bottom: 0;
+    }
+    .navbar-default {
+      background-color: #ffffff;
+    }
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+      color: #ffffff;
+      background-color: #05538a;
+      cursor: pointer;
+    }
+    .navbar-brand {
+      padding: 4px 15px;
+    }
+    .navbar-brand img {
+      width: 195px;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-form {
+      float: right;
+      padding: 0;
+    }
+    .navbar-nav {
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    .navbar-nav>li>.dropdown-menu {
+      padding: 0;
+    }
+    .pull-right {
+      width: 210px;
+    }
+    #associate-login {
+      color: #777777;
+      transition: color .1s;
+    }
+    #associate-login:hover {
+      color: #05538a;
+    }
+    #join-tranont {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join-tranont:hover {
+      color: #777777;
+    }
+    #join {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join:hover {
+      color: #777777;
+    }
+    #tipue_search_content {
+      padding-top: 0;
+    }
+    @media only screen and (max-width: 1200px) {
+      .join-text {
+        margin-left: 2px;
+      }
+      .nav > li > a {
+        padding: 15px 5px;
+      }
+      .navbar-brand {
+        padding: 4px 5px;
+      }
+      .navbar-brand img {
+        width: 130px;
+        border: none;
+        margin: 0;
+        padding: 5px 0 0 0;
+      }
+      .pull-right {
+        width: 122px;
+      }
+    }
+    @media only screen and (max-width: 1000px) {
+      #join {
+        display: block;
+      }
+      #join-tranont {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      .dropdown {
+        letter-spacing: 1px;
+      }
+      .dropdown-menu > li > a {
+        letter-spacing: 1px;
+      }
+      .join-text {
+        margin-left: 0;
+      }
+      .nav > li > a {
+        padding: 15px 2px;
+      }
+      .navbar-brand {
+        padding: 5px;
+      }
+      .navbar-brand img {
+        width: 125px;
+      }
+      .navbar-form {
+        width: 90px;
+      }
+      .navbar-nav {
+        letter-spacing: 1px;
+      }
+      .pull-right {
+        width: 85px;
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      #join-tranont {
+        display: block;
+      }
+      #join {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .nav > li > a {
+        padding: 15px 5px;
+      }
+      .navbar-brand {
+        padding: 4px 15px;
+      }
+      .navbar-brand img {
+        width: 195px;
+        padding: 0;
+      }
+      .navbar-form {
+        width: auto;
+        margin: 0 15px 15px 15px;
+      }
+      .pull-right {
+        width: auto;
+      }
+      #join-tranont {
+        display: block;
+      }
+      #join {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 414px) {
+      .navbar-toggle {
+        float: none;
+        margin-left: 21%;
+      }
+    }
+    @media only screen and (max-width: 375px) {
+      .navbar-toggle {
+        float: none;
+        margin-left: 19%;
+      }
+    }
+    @media only screen and (max-width: 320px) {
+      .navbar-toggle {
+        float: none;
+        margin-left: 6%;
+      }
+    }
+    /**** END Navbar Stylings ****/
+
+      /**** BEGIN Main Page Stylings ****/
+      a {
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:focus {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+      }
+      li {
+        letter-spacing: 1px;
+      }
+      h3, h4, h5 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      p, .col-xs-12 > ul > li {
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+      .bottom-row {
+        margin-bottom: 2.5%;
+      }
+      .center {
+        text-align: center;
+      }
+      .center-element {
+        display: block;
+        margin: 0 auto;
+      }
+      .col-xs-2 img {
+        display: block;
+        margin: 10% auto;
+      }
+      .col-xs-3 h4 {
+        margin-top: 5%;
+      }
+      .col-xs-3 img {
+        width: 100%;
+      }
+      .col-xs-4 {
+        padding: 0;
+      }
+      .col-xs-4 h4 {
+        margin-top: 20px;
+      }
+      .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2, .col-xs-12 {
+        padding: 0;
+      }
+      .collapsibale-hr {
+        margin: 20px 10px;
+        border-color: #888b8d;
+      }
+      .dissappearing-br {
+        display: none;
+      }
+      .hr-top {
+        border-color: #888888;
+        margin-top: 5%;
+        width: 80%;
+      }
+      .hr-bottom {
+        border-color: #888888;
+        width: 80%;
+      }
+      .leftright-margins {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .leftright-padding {
+        padding: 10px 15px 0 15px;
+      }
+      .margin-sides {
+        margin: 0 8%;
+      }
+      .no-top-border {
+        border-width: 0px 2px 2px 2px !important;
+      }
+      .panel-group .panel {
+        border-radius: 0;
+        border: none;
+      }
+      .page-headers {
+        text-transform: uppercase;
+        font-size: 21px;
+        color: #000001;
+        text-align: center;
+        letter-spacing: 4px;
+        margin-top: 25px;
+      }
+      .panel-heading {
+        background-color: #05538a;
+        border-radius: 0;
+        padding: 10px;
+      }
+      .panel-heading h4 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 20px;
+      }
+      .row iframe {
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
+      .signup-button {
+        margin: 0 auto 15px auto;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 0;
+        background-color: #ffffff;
+        border: 2px solid #333333;
+      }
+      .signup-button:hover {
+        background-color: #eeeeee;
+        border: 2px solid #333333;
+      }
+      .single-line {
+        padding: 11px 0;
+      }
+      .testimonials {
+        padding: 10px 30px;
+        background: #58adda;
+        background: -webkit-linear-gradient(#58adda, #1d78a9);
+        background: -o-linear-gradient(#58adda, #1d78a9);
+        background: -moz-linear-gradient(#58adda, #1d78a9);
+        background: linear-gradient(#58adda, #1d78a9);
+        border-radius: 10px;
+        color: #ffffff;
+        margin: 25px 0;
+      }
+      .testimonials p {
+        margin: 10px 0;
+        font-style: italic;
+        line-height: 40px;
+      }
+      .ticket-text {
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+      .top-img {
+        width: 100%;
+        z-index: -1;
+      }
+      .top-img-header {
+        color: #ffffff;
+        position: absolute;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        font-size: 48px;
+        width: 100%;
+        margin-top: 14%;
+        text-align: center;
+      }
+      .top-img-text {
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 8px !important;
+        font-weight: 200;
+        font-size: 21px;
+        width: 100%;
+        margin-top: 21%;
+        text-align: center;
+      }
+      .top-padding {
+        padding-top: 1%;
+      }
+      .top-padding-more {
+        padding-top: 3.5%
+      }
+      .top-rows {
+        margin-left: 0;
+      }
+      .width-100 {
+        width: 100%;
+      }
+      #bottom-panel {
+        background-color: #05538a;
+        color: #ffffff;
+        padding: 20px 0 40px 0;
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+      #btn-default {
+        border-radius: 0;
+        color: #333333;
+        background-color: #ffffff;
+        border: 2px solid #333333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      #btn-default:focus {
+        background-color: #ffffff;
+        border: 2px solid #333333;
+      }
+      #btn-default:hover {
+        background-color: #eeeeee;
+        border: 2px solid #333333;
+      }
+      #text-bottom {
+        margin-bottom: 15px;
+      }
+      #top-panel {
+        margin-top: 4%;
+      }
+      @media only screen and (max-width: 991px) {
+        .top-img-header {
+          letter-spacing: 7px;
+          font-size: 41px;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .col-xs-3 h4 {
+          font-size: 16px;
+        }
+        .col-xs-4 h4 {
+          font-size: 16px;
+        }
+      }
+      @media only screen and (max-width: 670px) {
+        .col-xs-3 h4 {
+          font-size: 14px;
+        }
+        .col-xs-4 h4 {
+          font-size: 14px;
+        }
+        .top-img-header {
+          font-size: 28px;
+          margin-top: 15%;
+          letter-spacing: 5px;
+        }
+        .top-img-text {
+          font-size: 18px;
+          margin-top: 23%;
+          letter-spacing: 5px !important;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .col-xs-3 h4 {
+          font-size: 12px;
+        }
+        .col-xs-3 .glyphicon {
+          height: 100px;
+          width: 100px;
+          border: 8px solid #05538a;
+        }
+        .col-xs-4 h4 {
+          font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: 535px) {
+        h3 {
+          font-size: 20px;
+          margin: -5px 0;
+        }
+        .single-line {
+          padding: 8.5px 0;
+        }
+        .top-img-header {
+          font-size: 25px;
+          margin-top: 17%;
+        }
+        .top-img-text {
+          font-size: 15px;
+          margin-top: 24%;
+          letter-spacing: 5px !important;
+        }
+      }
+      @media only screen and (max-width: 435px) {
+        .top-img-header {
+          font-size: 18px;
+          margin-top: 18%;
+        }
+        .top-img-text {
+          font-size: 14px;
+          margin-top: 24%;
+          letter-spacing: 3px !important;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .center h4 {
+          font-size: 12px;
+        }
+        .center p {
+          font-size: 12px;
+        }
+        .col-xs-3 h4 {
+          font-size: 8px;
+          letter-spacing: 1px;
+        }
+        .col-xs-4 h4 {
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+        .col-xs-12 h4 {
+          font-size: 14px;
+        }
+        .col-xs-12 li {
+          font-size: 10px;
+        }
+        .col-xs-12 p, .col-xs-12 > ul > li {
+          font-size: 12px;
+        }
+        .dissappearing-br {
+          display: block;
+        }
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .top-img-header {
+          font-size: 18px;
+          margin-top: 18%;
+          letter-spacing: 4px;
+        }
+        .top-img-text {
+          font-size: 12px !important;
+          margin-top: 25%;
+          letter-spacing: 3px !important;
+        }
+      }
+      @media only screen and (max-width: 399px) {
+        .col-xs-12 h4 {
+          font-size: 11px;
+          padding-top: 5px;
+        }
+        .top-img-header {
+          font-size: 18px;
+          margin-top: 20%;
+          letter-spacing: 5px;
+        }
+      }
+      @media only screen and (max-width: 375px) {
+        .top-img-header {
+          font-size: 18px;
+          margin-top: 19%;
+          letter-spacing: 4px;
+        }
+        .top-img-text {
+          font-size: 12px !important;
+          margin-top: 24%;
+          letter-spacing: 3px !important;
+        }
+      }
+      @media only screen and (max-width: 320px) {
+        .top-img-header {
+          font-size: 16px;
+          margin-top: 20%;
+        }
+        .top-img-text {
+          font-size: 10px !important;
+          margin-top: 25%;
+        }
+      }
+      /**** END Main Page Stylings ****/
+
+      /**** BEGIN Footer Stylings ****/
+      ul li a i {
+        background: #888888;
+        color: #ffffff;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        font-size: 19px !important;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 23%;
+        padding-right: 1px;
+        transition: background-color .5s;
+      }
+      ul li a i:hover {
+        background-color: #05538a;
+      }
+      .footer {
+        background-color: #ffffff;
+        color: #aaaaaa;
+        border: 1px solid #cccccc;
+        padding-top: 7px;
+        padding-bottom: 1%;
+      }
+      .socialmedia-icons {
+        overflow: auto;
+        padding-left: 0;
+      }
+      .socialmedia-icons li {
+        list-style-type: none;
+        float: left;
+      }
+      @media only screen and (max-width: 992px) {
+        ul li a i {
+          width: 30px;
+          height: 30px;
+          border-radius: 25px;
+          font-size: 19px !important;
+          margin-right: 7px;
+          margin-top: 7px;
+        }
+        .footer {
+          padding-bottom: 7px;
+        }
+      }
+      @media only screen and (max-width: 713px) {
+        ul li a i {
+          margin-top: 7px;
+          padding-left: 1px;
+        }
+        .footer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 417px) {
+        ul li a i {
+          margin-top: 4px;
+          margin-right: 4px;
+          font-size: 18px !important;
+          padding-top: 9px;
+          padding-left: 1px;
+        }
+        .footer {
+          font-size: 8px;
+        }
+        #social-media {
+          float: right;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .col-xs-3 {
+          padding: 0;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        ul li a i {
+          padding-left: 1px;
+        }
+        .col-xs-3 {
+          padding: 0;
+        }
+        .footer {
+          font-size: 8px;
+        }
+        #social-media {
+          float: right;
+        }
+      }
+      /**** END Footer Stylings ****/
+		</style>
+
+    </head>
+    <body onlaod="breakOut();">
+      <!-- BEGIN Navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+  		  <div class="container">
+  		    <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Alternar navegación</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="http://tranont.com/"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-horiz.jpg"/></a></div>
+          <div class="navbar-collapse collapse">
+    		    <ul class="nav navbar-nav">
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://tranont.com/company.html">COMPAÑÍA</a><ul class="dropdown-menu">
+    		      		<li><a href="http://tranont.com/company.html#associates">ASOCIADOS</a></li>
+    		      		<li><a href="http://tranont.com/company.html#foundation">FUNDACIÓN</a></li>
+    		      		<li><a href="http://tranont.com/company.html#investor-relations">RELACIONES CON INVERSORES</a></li>
+    		      		<li><a href="http://tranont.com/company.html#media-kit">PRENSA</a></li>
+    		      		<li><a href="http://tranont.com/executives.html">EJECUTIVOS</a></li>
+      		      	<li><a href="http://tranont.com/aboutus.html">QUIÉNES SOMOS</a></li>
+      		      	<li><a href="http://tranont.com/company.html#supportfaq">SOPORTE</a></li>
+    		      		<li><a href="http://tranont.com/company.html#supportfaq">PREGUNTAS FRECUENTES</a></li>
+    		      		<li><a href="http://tranont.com/company.html#blog">BLOG</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://tranont.com/products.html">PRODUCTOS</a><ul class="dropdown-menu">
+                  <li class="dropdown-header">SERVICIOS CENTRALES</li>
+    		      		<li><a href="http://tranont.com/oneview.html">ONEVIEW</a></li>
+    		      		<li><a href="http://tranont.com/defend.html">DEFEND</a></li>
+    		      		<li><a href="http://tranont.com/taxbot.html">TAXBOT</a></li>
+    		      		<li><a href="http://tranont.com/legal.html">LEGAL</a></li>
+    		      		<li><a href="http://tranont.com/creditservices.html">SERVICIOS DE CRÉDITO</a></li>
+    		      		<li><a href="http://tranont.com/taxservices.html">SERVICIOS DE IMPUESTOS</a></li>
+    		      		<li><a href="http://tranont.com/mobilehealthcare.html">ATENCIÓN MÉDICA MÓVIL</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">HERRAMIENTAS DE TRABAJO</li>
+    		      		<li><a href="http://tranont.com/marketingplatform.html">PLATAFORMA DE MERCADOTECNIA</a></li>
+    		      		<li><a href="http://tranont.com/associatecenter.html">CENTRO DE ASOCIADOS</a></li>
+                  <li class="divider"></li>
+    		      		<li><a href="http://tranont.com/retailservices.html">SERVICIOS PARA COMERCIANTES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://tranont.com/compensation.html">REMUNERACIÓN</a><ul class="dropdown-menu">
+    		      		<li><a href="http://tranont.com/compensation.html#comp-plan">PLAN DE REMUNERACIÓN</a></li>
+    		      		<li><a href="http://tranont.com/compensation.html#why-tranont">POR QUÉ TRANONT</a></li>
+    		      		<li><a href="http://tranont.com/compensation.html#current-promos">PROMOCIONES</a></li>
+                  <li><a href="http://tranont.com/retailservices.html">SERVICIOS PARA COMERCIANTES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://tranont.com/events.html">EVENTOS</a><ul class="dropdown-menu">
+    		      		<li><a href="http://tranont.com/events.html#international">EVENTOS INTERNACIONALES</a></li>
+    		      		<li><a href="http://tranont.com/events.html#regional">EVENTOS DEL MERCADO</a></li>
+      		      	<li><a href="http://tranont.com/events.html#national">EVENTOS DE PROMOCIÓN</a></li>
+    		      	</ul>
+    		      </li>
+              <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201706_espanol_tag.png" alt="Español"/></a><ul class="dropdown-menu">
+                  <li><a href="http://tranont.com/taxservices.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/united-states-flag.png" alt="Bandera de Estados Unidos"/> EU (IN)</a></li>
+                  <li><a href="http://tranontinternational.ca/taxservices.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Bandera de Canadá"/> CA (IN)</a></li>
+                  <li><a href="http://fr.tranontinternational.ca/taxservices.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Bandera de Canadá"/> CA (FR)</a></li>
+                </ul>
+              </li>
+    		      <li><a class="join-text" href="https://member.tranont.com/signup"><span id="join-tranont"><strong>ÚNASE A TRANONT</strong></span><span id="join"><strong>ÚNASE</strong></span></a></li>
+    		      <li><a href="http://members.tranont.com/login"><span id="associate-login"><strong>INICIAR SESIÓN</strong></span></a></li>
+    		    </ul>
+            <div class="dropdown pull-right">
+              <form class="navbar-form" role="search" action="search.html">
+                <div class="input-group"><input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required><div class="input-group-btn" id="tipue_search_content"><button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+  		  </div>
+  		</nav>
+      <!-- END Navbar -->
+
+      <!-- BEGIN Main Content -->
+      <div class="container main">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="top-img-header">Servicios de impuestos</h2>
+            <h4 class="top-img-text">Sus profesionales de impuestos</h4><img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_TaxServices_topmod_01.jpg" alt="Lapicero, documentos fiscales y calculadora pequeña"/></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12"><br/><h3 class="center">Su conexión con contadores públicos con experiencia</h3><br/><p class="leftright-margins">Los servicios de impuestos de Tranont le ayudan a navegar a través del difícil campo fiscal con nuestro socios que son contadores públicos certificados en materia de impuestos, entienden las leyes impositivas y le pueden ayudar a obtener el mayor reembolso cada año. Todos los asociados de Tranont que califiquen* podrían recibir lo siguiente:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <ul>
+              <li>Consultas y orientación sobre impuestos</li>
+              <li>Declaraciones de impuestos personales y sencillas; incluye su declaración personal y la de su negocio de Tranont.</li>
+              <li>La declaración de impuestos de negocio del primer año, si la entidad legal fue creada por Tranont Legal.</li>
+            </ul>
+            <p class="leftright-margins">Por una cuota adicional, los asociados también podrían recibir:</p>
+            <ul>
+              <li>Declaraciones de impuestos de negocio y personales complejas</li>
+              <li>Declaraciones de impuestos de años anteriores (de 2015 y previas)</li>
+              <li>Declaraciones de impuestos corregidas</li>
+              <li>Asistencia con el IRS con una tarifa por hora</li>
+              <li>Contabilidad básica con una tarifa por hora</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row testimonials">
+          <div class="col-xs-12">
+            <p>“Me da confianza y estoy contento de que alguien me prepare mi declaración de impuestos”. Brent M.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="leftright-margins">Las leyes fiscales son complicadas y preparar uno mismo su declaración llega a convertirse en una tarea que consume mucho tiempo. Nuestro deseo es que nuestros asociados comprendan la manera de sortear esa necesidad anual con las mejores ventajas financieras posibles.</p>
+            <p class="leftright-margins">Ingrese como Asociado o como Cliente:</p><a href="https://member.tranont.com/signup" type="button" class="btn btn-default signup-button leftright-margins">Inscribirse</a></div>
+        </div>
+        <div class="row bottom-row">
+          <div class="col-xs-12">
+            <p class="leftright-margins"><em>*A fin de calificar para este servicio, los asociados deben ser miembros activos de Tranont durante seis meses del año fiscal y estar en buenos términos y activos al momento de presentar la declaración de impuestos.</em></p>
+          </div>
+        </div>
+      </div>
+      <!-- END Main Content -->
+
+      <!-- BEGIN Footer -->
+	    <div class="container">
+	    	<div class="row footer">
+          <div class="col-xs-2"><span class="footer-address"> 8871 S. Sandy Pkwy<br/> Suite 200<br/> Sandy, UT 84070 </span></div>
+          <div class="col-xs-3"><span class="footer-schedule"> <strong>Llamada gratis:</strong> 800.973.3715<br/><strong>Fax:</strong> 801.384.7143<br/><strong>Correo electrónico:</strong> support@tranont.com </span></div>
+          <div class="col-xs-3"><span class="footer-schedule"> De lunes a viernes: De 8 am a 6 pm<br/> Cerrado sábado y domingo<br/><em>Hora de la montaña de EE. UU.</em> </span></div>
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-3" id="social-media"><strong>Manténgase conectado:</strong><br/><ul class="socialmedia-icons" id="socialmedia-icons-lg">
+              <li><a href="https://www.facebook.com/tranontofficial/"><i class="fa fa-lg fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/tranont/"><i class="fa fa-lg fa-instagram"></i></a></li>
+            </ul>
+          </div>
+	    	</div>
+	    </div>
+      <!-- END Footer -->
+	    <script src="main.js"></script>
+    </body>
+</html>
